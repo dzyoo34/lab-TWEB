@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* внешний отступ */
+    padding: 0;   /* внутренний */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+ul {
+    font-family: 'Comfortaa' , sans-serif;
+}
+
+nav {
+    background-color: orange;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;   /* без маркеров */
+    margin: 0;
+    padding: 0;
+    display: flex;  /* горизонтальный список */
+    justify-content: flex-end;  /* правый край */
+}
+
+nav li {
+    padding: 20px 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;   /* без подчеркивания ссылок */
+    font-size: 18px;
+}
+.cart {
+    padding: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ccc;  /* рамка */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.cart-steps {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.step.active {
+    background-color: orange;
+    color: white;
+}
+
+.cart-summary {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check-info {
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
